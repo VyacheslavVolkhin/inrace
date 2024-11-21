@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
+
+	//button scroll 
+	document.querySelectorAll('.js-anchor').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+	
+
 	//header catalog menu
 	const catalogMenuButtons = document.querySelectorAll('.popup-catalog-wrap .btn-catalog-menu');
 
@@ -166,8 +178,8 @@ document.addEventListener("DOMContentLoaded", function() {
 				if (this.closest('.popup-catalog-wrap')) {
 					document.body.classList.add('menu-show')
 				}
-				if (this.closest('.popup-search-wrap')) {
-					document.body.classList.add('search-show')
+				if (this.closest('.popup-menu-wrap')) {
+					document.body.classList.add('menu-show')
 				}
 				if (this.closest('.popup-filter-wrap')) {
 					document.body.classList.add('filter-show')

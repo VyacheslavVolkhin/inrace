@@ -55,8 +55,31 @@
                             <img src="./img/icons/cart.svg" alt="">
                         </a>
                     </div>
-                    <div class="action-wrap action-menu popup-catalog-wrap js-popup-wrap">
+                    <div class="action-wrap action-menu popup-menu-wrap js-popup-wrap">
                         <a href="" class="btn-popup-toggle btn-action-ico ico-menu js-btn-popup-toggle"></a>
+                        <div class="popup-content-block js-popup-block">
+                            <ul class="menu">
+                                <li><a href="" class="btn-menu">
+                                        <div class="button-title">О компании </div>
+                                    </a></li>
+                                <li><a href="" class="btn-menu">
+                                        <div class="button-title">Каталог </div>
+                                    </a></li>
+                                <li><a href="" class="btn-menu">
+                                        <div class="button-title">Доставка и оплата </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-inner-wrap">
+                    <div class="button-wrap popup-catalog-wrap js-popup-wrap">
+                        <a href="" class="btn button-second button-hover-blue js-btn-popup-toggle">
+                            <div class="button-ico">
+                                <img src="./img/icons/list.svg" alt="">
+                            </div>
+                            <div class="button-title">Каталог продукции</div>
+                        </a>
                         <div class="popup-content-block js-popup-block">
                             <a href="" class="btn-popup-close btn-action-ico ico-close js-btn-popup-close"></a>
                             <div class="catalog-menu-inner-wrap">
@@ -822,16 +845,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="buttons-inner-wrap">
-                    <div class="button-wrap">
-                        <a href="" class="btn button-second button-hover-blue">
-                            <div class="button-ico">
-                                <img src="./img/icons/list.svg" alt="">
-                            </div>
-                            <div class="button-title">Каталог продукции</div>
-                        </a>
-                    </div>
                     <div class="button-wrap">
                         <a href="" class="btn button-second button-hover-pink">
                             <div class="button-title">Клуб</div>
@@ -967,40 +980,6 @@
                         <div class="section-outer-wrap">
                             <div class="section-inner-wrap">
                                 <div class="section-title-wrap">
-                                    <div class="section-title h1-title title-small title-mobile-small">Подтверждение заказа</div>
-                                </div>
-                                <div class="section-total-wrap">
-                                    <div class="section-title h1-title title-small title-mobile-small">Итого</div>
-                                    <div class="section-price">
-                                        <div class="elm-price h1-title title-mobile-small" data-unit-after=" ₽">900 694</div>
-                                    </div>
-                                </div>
-                                <div class="section-content-wrap">
-                                    <div class="frm-row">
-                                        <div class="frm-field">
-                                            <div class="frm-select type-radio type-second">
-                                                <input type="checkbox" id="radio04-01" checked>
-                                                <label for="radio04-01">Я согласен получать информацию о скидках и акциях</label>
-                                            </div>
-                                            <div class="frm-select type-radio type-second">
-                                                <input type="checkbox" id="radio04-02">
-                                                <label for="radio04-02">Нажимая кнопку «Оформить заказ», Вы даете свое согласие на <a href="">обработку персональных данных</a> и соглашаетесь с <a href="">Политикой конфиденциальности</a></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="frm-row-submit">
-                                        <div class="frm-field">
-                                            <button type="submit" class="btn button-border-att">Оформить заказ</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/section-outer-wrap-->
-                        <!--section-outer-wrap-->
-                        <div class="section-outer-wrap">
-                            <div class="section-inner-wrap">
-                                <div class="section-title-wrap">
                                     <div class="section-title h1-title title-small title-mobile-small">Адрес получателя</div>
                                 </div>
                                 <div class="section-content-wrap">
@@ -1044,6 +1023,40 @@
                                         </div>
                                         <div class="frm-field">
                                             <input type="text" class="form-input" placeholder="Домофон">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/section-outer-wrap-->
+                        <!--section-outer-wrap-->
+                        <div class="section-outer-wrap">
+                            <div class="section-inner-wrap">
+                                <div class="section-title-wrap">
+                                    <div class="section-title h1-title title-small title-mobile-small">Подтверждение заказа</div>
+                                </div>
+                                <div class="section-total-wrap">
+                                    <div class="section-title h1-title title-small title-mobile-small">Итого</div>
+                                    <div class="section-price">
+                                        <div class="elm-price h1-title title-mobile-small" data-unit-after=" ₽">900 694</div>
+                                    </div>
+                                </div>
+                                <div class="section-content-wrap">
+                                    <div class="frm-row">
+                                        <div class="frm-field">
+                                            <div class="frm-select type-radio type-second">
+                                                <input type="checkbox" id="radio04-01" checked>
+                                                <label for="radio04-01">Я согласен получать информацию о скидках и акциях</label>
+                                            </div>
+                                            <div class="frm-select type-radio type-second">
+                                                <input type="checkbox" id="radio04-02">
+                                                <label for="radio04-02">Нажимая кнопку «Оформить заказ», Вы даете свое согласие на <a href="">обработку персональных данных</a> и соглашаетесь с <a href="">Политикой конфиденциальности</a></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frm-row-submit">
+                                        <div class="frm-field">
+                                            <button type="submit" class="btn button-border-att">Оформить заказ</button>
                                         </div>
                                     </div>
                                 </div>

@@ -15,6 +15,11 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
+html.with-fancybox body.hide-scrollbar {
+	overflow: inherit !important;
+	overflow-x: hidden !important;
+	margin-right: 0 !important;
+}
 html {
 	scrollbar-gutter: stable;
     //height: -webkit-fill-available;
@@ -245,6 +250,36 @@ html {
 		flex-shrink: 0;
 	}
 }
+.popup-menu-wrap {
+	.popup-content-block {
+		display: none;
+		position: absolute;
+		top: 100%;right: var(--paddingContainer);
+		width: 240px;
+		text-align: center;
+		background: var(--clr-base);
+		color: #fff;
+		z-index: 20;
+		padding: 15px;
+	}
+	.btn-popup-close {
+		display: none;
+	}
+	.btn-menu {
+		font-size: 14px;
+		line-height: 1.35;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 8px 0;
+		text-align: center;
+		display: block;
+		.fb;
+		&:hover, &.active {
+			color: var(--clr-att);
+		}
+	}
+}
 .popup-catalog-wrap {
 	.popup-content-block {
 		position: absolute;
@@ -341,8 +376,19 @@ html {
 	}
 }
 @media (max-width: 1023px) {
+	.header {
+		.action-menu {
+			position: relative;
+		}
+	}
 	.menu-show {
 		overflow: hidden;
+	}
+	.popup-menu-wrap {
+		.popup-content-block {
+			right: 5px;
+			margin-top: 15px;
+		}
 	}
 	.popup-catalog-wrap {
 		.popup-content-block {

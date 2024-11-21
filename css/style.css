@@ -426,6 +426,11 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+html.with-fancybox body.hide-scrollbar {
+  overflow: inherit !important;
+  overflow-x: hidden !important;
+  margin-right: 0 !important;
+}
 html {
   scrollbar-gutter: stable;
 }
@@ -693,6 +698,39 @@ html {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.popup-menu-wrap .popup-content-block {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: var(--paddingContainer);
+  width: 240px;
+  text-align: center;
+  background: var(--clr-base);
+  color: #fff;
+  z-index: 20;
+  padding: 15px;
+}
+.popup-menu-wrap .btn-popup-close {
+  display: none;
+}
+.popup-menu-wrap .btn-menu {
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 8px 0;
+  text-align: center;
+  display: block;
+  font-family: 'Bicubik', sans-serif;
+}
+.popup-menu-wrap .btn-menu * {
+  font-family: 'Bicubik', sans-serif;
+}
+.popup-menu-wrap .btn-menu:hover,
+.popup-menu-wrap .btn-menu.active {
+  color: var(--clr-att);
+}
 .popup-catalog-wrap .popup-content-block {
   position: absolute;
   top: 100%;
@@ -795,8 +833,15 @@ html {
   display: none;
 }
 @media (max-width: 1023px) {
+  .header .action-menu {
+    position: relative;
+  }
   .menu-show {
     overflow: hidden;
+  }
+  .popup-menu-wrap .popup-content-block {
+    right: 5px;
+    margin-top: 15px;
   }
   .popup-catalog-wrap .popup-content-block {
     width: 100%;
@@ -1166,6 +1211,9 @@ html {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 0 23px 0 0;
+}
+.item-tile-price .tile-row-price:last-child {
+  padding-right: 0;
 }
 .item-tile-price .tile-price {
   color: var(--clr-att);
@@ -1981,7 +2029,7 @@ html {
   }
   .item-tile-price .tile-row-action .btn-action-ico.ico-cart-add:before,
   .item-tile-price .tile-row-action .btn-action-ico.ico-cart-add:after {
-    background-size: 3.6rem auto;
+    background-size: 3.2rem auto;
   }
   .item-tile-select {
     padding: 10rem 15px 10rem 15px;
@@ -2095,6 +2143,11 @@ html {
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+#section-buy,
+#section-pilot,
+#section-study {
+  scroll-margin-top: 5rem;
+}
 .info-slider-box {
   margin-bottom: var(--mbMain);
 }
