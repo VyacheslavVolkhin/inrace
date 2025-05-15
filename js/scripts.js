@@ -474,4 +474,24 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 	});
 
+
+	//slider cardmain
+	const swiperSliderCardMain = new Swiper('.slider-cardmain .swiper', {
+		loop: false,
+		slidesPerView: 1,
+		spaceBetween: 0,
+		autoHeight: true,
+		speed: 400,
+		pagination: {
+			el: '.slider-cardmain-pagination',
+			clickable: true,
+		},
+		autoplay: false,
+		navigation: {
+			nextEl: '.btn-action-ico.ico-arrow.ico-arrow-next.button-slider-cardmain-next',
+			prevEl: '.btn-action-ico.ico-arrow.ico-arrow-prev.button-slider-cardmain-prev',
+		},
+	
+	});
+
 })
